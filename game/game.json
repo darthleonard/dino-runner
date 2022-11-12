@@ -470,6 +470,26 @@
         "name": "Images/Run (8).png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "Audio/jump.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Audio/jump.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "Audio/BGM.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Audio/BGM.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -498,7 +518,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5333333435058611,
+        "zoomFactor": 0.7347333435058618,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -542,8 +562,8 @@
           "name": "Player",
           "persistentUuid": "72f68937-0d31-4fbd-a9da-2ecac367d803",
           "width": 0,
-          "x": 76,
-          "y": 297,
+          "x": 46,
+          "y": 431,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -1283,6 +1303,18 @@
                 "=",
                 "250"
               ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "Audio/BGM.mp3",
+                "yes",
+                "",
+                ""
+              ]
             }
           ]
         },
@@ -1451,7 +1483,7 @@
                   "parameters": [
                     "Platform",
                     "<=",
-                    "-200"
+                    "-1000"
                   ]
                 }
               ],
@@ -1463,7 +1495,7 @@
                   "parameters": [
                     "Platform",
                     "=",
-                    "2006"
+                    "976\n"
                   ]
                 }
               ]
