@@ -412,7 +412,7 @@
           "customSize": true,
           "height": 600,
           "layer": "",
-          "name": "NewSprite",
+          "name": "Background",
           "persistentUuid": "3e3b8c8d-a714-4439-a28c-ff8cf12234be",
           "width": 800,
           "x": 0,
@@ -1092,7 +1092,7 @@
         },
         {
           "assetStoreId": "",
-          "name": "NewSprite",
+          "name": "Background",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
