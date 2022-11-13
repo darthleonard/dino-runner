@@ -666,6 +666,7 @@
           "effects": [],
           "behaviors": [
             {
+              "gravity": 750,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1500,
@@ -673,7 +674,6 @@
               "canGrabPlatforms": false,
               "canGrabWithoutMoving": true,
               "deceleration": 1500,
-              "gravity": 1000,
               "ignoreDefaultControls": true,
               "jumpSpeed": 600,
               "jumpSustainTime": 0.2,
