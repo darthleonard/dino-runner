@@ -520,8 +520,8 @@
           "name": "ShowScore",
           "persistentUuid": "cf556aa8-1771-40ad-8d11-0d0aac2ce79e",
           "width": 0,
-          "x": 613,
-          "y": 25,
+          "x": 629,
+          "y": 29,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -598,6 +598,36 @@
           "x": 634,
           "y": 514,
           "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "RecordText",
+          "persistentUuid": "f01d934a-dab2-4fe1-b5ce-ab8be6201761",
+          "width": 0,
+          "x": 25,
+          "y": 24,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "MaxScore",
+          "persistentUuid": "0dcd7a02-15a7-4174-826f-f756e9765d25",
+          "width": 0,
+          "x": 246,
+          "y": 26,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1401,27 +1431,6 @@
         },
         {
           "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "ShowScore",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "0",
-          "font": "",
-          "characterSize": 60,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "assetStoreId": "",
           "name": "Cactus",
           "tags": "",
           "type": "Sprite",
@@ -1472,6 +1481,69 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "ShowScore",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "0",
+          "font": "",
+          "characterSize": 60,
+          "color": {
+            "b": 35,
+            "g": 166,
+            "r": 245
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "RecordText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Record:",
+          "font": "",
+          "characterSize": 60,
+          "color": {
+            "b": 33,
+            "g": 211,
+            "r": 126
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "MaxScore",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "0",
+          "font": "",
+          "characterSize": 60,
+          "color": {
+            "b": 33,
+            "g": 211,
+            "r": 126
+          }
         }
       ],
       "events": [
@@ -1527,6 +1599,27 @@
               "parameters": [
                 "Block"
               ]
+            },
+            {
+              "type": {
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"dinorunner\"",
+                "\"score\"",
+                "",
+                "score"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "MaxScore",
+                "=",
+                "VariableString(score)"
+              ]
             }
           ]
         },
@@ -1545,11 +1638,11 @@
             },
             {
               "type": {
-                "value": "KeyPressed"
+                "value": "MouseButtonReleased"
               },
               "parameters": [
                 "",
-                "Up"
+                "Left"
               ]
             }
           ],
@@ -1642,11 +1735,11 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "KeyPressed"
+                    "value": "MouseButtonPressed"
                   },
                   "parameters": [
                     "",
-                    "Up"
+                    "Left"
                   ]
                 }
               ],
@@ -1877,11 +1970,11 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "KeyPressed"
+                    "value": "MouseButtonReleased"
                   },
                   "parameters": [
                     "",
-                    "Return"
+                    "Left"
                   ]
                 }
               ],
@@ -1894,6 +1987,33 @@
                     "",
                     "\"GameScene\"",
                     "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "score",
+                    "<",
+                    "Player.Variable(score)"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EcrireFichierExp"
+                  },
+                  "parameters": [
+                    "\"dinorunner\"",
+                    "\"score\"",
+                    "Player.Variable(score)"
                   ]
                 }
               ]
