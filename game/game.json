@@ -454,6 +454,15 @@
         "name": "Images/Dead (8).png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Images/block.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Images/block.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -566,14 +575,29 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 94,
+          "height": 66,
           "layer": "",
           "name": "Cactus",
           "persistentUuid": "aa52fd5a-b2d9-4a91-926a-2011b3c6441d",
-          "width": 99,
+          "width": 57,
           "x": 631,
-          "y": 467,
+          "y": 495,
           "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 34,
+          "layer": "",
+          "name": "Block",
+          "persistentUuid": "c8915cc7-5133-4c32-a708-b740ae069d39",
+          "width": 12,
+          "x": 634,
+          "y": 514,
+          "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1436,6 +1460,18 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "Block",
+          "tags": "",
+          "texture": "Images/block.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "events": [
@@ -1482,6 +1518,14 @@
                 "yes",
                 "",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Block"
               ]
             }
           ]
@@ -1554,6 +1598,17 @@
               },
               "parameters": [
                 "Cactus",
+                "180",
+                "Variable(speed)",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "Block",
                 "180",
                 "Variable(speed)",
                 ""
@@ -1688,7 +1743,7 @@
                   },
                   "parameters": [
                     "Player",
-                    "Cactus",
+                    "Block",
                     "",
                     "",
                     "yes"
@@ -1713,6 +1768,43 @@
                   "parameters": [
                     "Player",
                     "\"Dead\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Block",
+                    "<=",
+                    "-50"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Block",
+                    "=",
+                    "801"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Cactus",
+                    "=",
+                    "801"
                   ]
                 }
               ]
