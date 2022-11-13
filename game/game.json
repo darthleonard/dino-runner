@@ -491,7 +491,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.872533343505863,
+        "zoomFactor": 0.8513333435058629,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -628,6 +628,21 @@
           "x": 246,
           "y": 26,
           "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 599,
+          "layer": "",
+          "name": "Background",
+          "persistentUuid": "60cc293e-50ef-4b86-8a53-f5b5aeec3f3c",
+          "width": 800,
+          "x": 800,
+          "y": 0,
+          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1887,7 +1902,7 @@
                   "parameters": [
                     "Block",
                     "=",
-                    "801"
+                    "1200"
                   ]
                 },
                 {
@@ -1897,7 +1912,7 @@
                   "parameters": [
                     "Cactus",
                     "=",
-                    "801"
+                    "1200"
                   ]
                 }
               ]
