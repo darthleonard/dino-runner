@@ -535,7 +535,7 @@
           "name": "Player",
           "persistentUuid": "72f68937-0d31-4fbd-a9da-2ecac367d803",
           "width": 0,
-          "x": 46,
+          "x": 40,
           "y": 431,
           "zOrder": 4,
           "numberProperties": [],
@@ -666,9 +666,9 @@
           "effects": [],
           "behaviors": [
             {
-              "gravity": 750,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "gravity": 750,
               "acceleration": 1500,
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
@@ -1597,6 +1597,16 @@
             },
             {
               "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "currentScore",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
                 "value": "PlayMusic"
               },
               "parameters": [
@@ -1735,6 +1745,16 @@
             },
             {
               "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "currentScore",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
                 "value": "TextObject::String"
               },
               "parameters": [
@@ -1745,6 +1765,22 @@
             }
           ],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Player",
+                    "=",
+                    "40"
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -1793,17 +1829,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "value": "AddForceAL"
-                  },
-                  "parameters": [
-                    "Player",
-                    "0",
-                    "Variable(speed)",
-                    ""
-                  ]
-                },
                 {
                   "type": {
                     "value": "SetAnimationName"
@@ -2020,39 +2045,16 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarObjet"
-              },
-              "parameters": [
-                "Player",
-                "score",
-                ">=",
-                "1000"
-              ]
-            },
-            {
-              "type": {
-                "value": "VarObjet"
-              },
-              "parameters": [
-                "Player",
-                "score",
-                "<",
-                "2000"
-              ]
-            }
-          ],
+          "conditions": [],
           "actions": [
             {
               "type": {
                 "value": "ModVarScene"
               },
               "parameters": [
-                "speed",
+                "currentScore",
                 "=",
-                "270"
+                "mod(Variable(currentScore),837)"
               ]
             }
           ]
@@ -2062,13 +2064,23 @@
           "conditions": [
             {
               "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "currentScore",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
                 "value": "VarObjet"
               },
               "parameters": [
                 "Player",
                 "score",
-                ">=",
-                "2000"
+                ">",
+                "0"
               ]
             }
           ],
@@ -2080,7 +2092,7 @@
               "parameters": [
                 "speed",
                 "=",
-                "300"
+                "Variable(speed) + 50"
               ]
             }
           ]
