@@ -1,0 +1,10 @@
+sources credits
+
+background, platform, font, audios
+https://wiki.gdevelop.io/gdevelop5/tutorials/endless-runner?utm_source=gdevelop&utm_medium=help-link
+
+freedinosprite.zip
+https://www.gameart2d.com/free-dino-sprites.html
+
+Arcade - Dyna Gear - Pterodactyl.png
+https://www.spriters-resource.com/arcade/dynagear/sheet/168690/
