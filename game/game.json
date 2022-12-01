@@ -463,6 +463,87 @@
         "name": "Images/block.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Images/pterodactyl/tile000.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Images/pterodactyl/tile000.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Images/pterodactyl/tile001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Images/pterodactyl/tile001.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Images/pterodactyl/tile002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Images/pterodactyl/tile002.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Images/pterodactyl/tile003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Images/pterodactyl/tile003.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Images/pterodactyl/tile004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Images/pterodactyl/tile004.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Images/pterodactyl/tile005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Images/pterodactyl/tile005.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Images/pterodactyl/tile006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Images/pterodactyl/tile006.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Images/pterodactyl/tile007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Images/pterodactyl/tile007.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Images/spawn.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Images/spawn.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -491,7 +572,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8513333435058629,
+        "zoomFactor": 0.7161333435058622,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -643,6 +724,66 @@
           "x": 800,
           "y": 0,
           "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 11,
+          "layer": "",
+          "name": "Spawn",
+          "persistentUuid": "cbece181-4b99-4cb5-be45-f31d316e2dbe",
+          "width": 12,
+          "x": 1100,
+          "y": 517,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 7,
+          "layer": "",
+          "name": "Spawn",
+          "persistentUuid": "2bc7fc2d-5bf4-4dd5-8b9b-7402828d604d",
+          "width": 11,
+          "x": 1100,
+          "y": 478,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 13,
+          "layer": "",
+          "name": "Block2",
+          "persistentUuid": "33f36c8e-79a1-4447-bb69-bd92a6bbf19f",
+          "width": 20,
+          "x": -88,
+          "y": 478,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Pterodactyl",
+          "persistentUuid": "609df026-4bc2-4c5c-98ad-136889a12699",
+          "width": 0,
+          "x": -201,
+          "y": 281,
+          "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1499,6 +1640,18 @@
         },
         {
           "assetStoreId": "",
+          "height": 32,
+          "name": "Block2",
+          "tags": "",
+          "texture": "Images/block.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
           "bold": false,
           "italic": false,
           "name": "ShowScore",
@@ -1559,6 +1712,207 @@
             "g": 211,
             "r": 126
           }
+        },
+        {
+          "assetStoreId": "",
+          "name": "Pterodactyl",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Flying",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Images/pterodactyl/tile000.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Images/pterodactyl/tile001.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Images/pterodactyl/tile002.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Images/pterodactyl/tile003.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Images/pterodactyl/tile004.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Images/pterodactyl/tile005.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Images/pterodactyl/tile006.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Images/pterodactyl/tile007.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Spawn",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Images/spawn.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -1607,6 +1961,16 @@
             },
             {
               "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "pterodactylOn",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
                 "value": "PlayMusic"
               },
               "parameters": [
@@ -1623,6 +1987,14 @@
               },
               "parameters": [
                 "Block"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Block2"
               ]
             },
             {
@@ -1786,6 +2158,34 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "score",
+                    ">=",
+                    "200"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "pterodactylOn",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
                     "value": "MouseButtonPressed"
                   },
                   "parameters": [
@@ -1872,14 +2272,34 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "CollisionNP"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "Player",
-                    "Block",
-                    "",
-                    "",
-                    "yes"
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Block",
+                        "",
+                        "",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Block2",
+                        "",
+                        "",
+                        "yes"
+                      ]
+                    }
                   ]
                 }
               ],
@@ -1901,6 +2321,14 @@
                   "parameters": [
                     "Player",
                     "\"Dead\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseAnimation"
+                  },
+                  "parameters": [
+                    "Pterodactyl"
                   ]
                 }
               ]
@@ -1938,6 +2366,126 @@
                     "Cactus",
                     "=",
                     "1200"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "pterodactylOn",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AjoutHasard"
+                      },
+                      "parameters": [
+                        "",
+                        "Spawn"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "Pterodactyl",
+                        "<=",
+                        "-1000"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "Block2",
+                        "=",
+                        "Spawn.X()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Pterodactyl",
+                        "Spawn.X()-Pterodactyl.Width()/2",
+                        "Block2.Y()",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "Pterodactyl",
+                        "<=",
+                        "-1000"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Pterodactyl",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "Pterodactyl",
+                        "180",
+                        "Variable(speed) + (Variable(speed)/4)",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "Block2",
+                        "180",
+                        "Variable(speed) + (Variable(speed)/4)",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
