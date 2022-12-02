@@ -544,6 +544,15 @@
         "name": "Images/spawn.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Images/meteorito-kawaii.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Images/meteorito-kawaii.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -572,7 +581,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.2605333435058625,
+        "zoomFactor": 1.2397333435058628,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -814,6 +823,21 @@
           "x": 934,
           "y": 159,
           "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1,
+          "layer": "",
+          "name": "Meteorite",
+          "persistentUuid": "e1d6442b-97db-44aa-a1af-2ce3dbc75bd8",
+          "width": 1,
+          "x": 461,
+          "y": 34,
+          "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1943,6 +1967,47 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Meteorite",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Images/meteorito-kawaii.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -2046,6 +2111,16 @@
                 "MaxScore",
                 "=",
                 "VariableString(score)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSize"
+              },
+              "parameters": [
+                "Meteorite",
+                "1",
+                "1"
               ]
             }
           ]
@@ -2179,6 +2254,16 @@
                     "Player",
                     "=",
                     "40"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSize"
+                  },
+                  "parameters": [
+                    "Meteorite",
+                    "Meteorite.Width()+.001",
+                    "Meteorite.Height()+.001"
                   ]
                 }
               ]
