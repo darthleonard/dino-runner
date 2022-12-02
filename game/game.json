@@ -736,7 +736,7 @@
           "name": "Spawn",
           "persistentUuid": "cbece181-4b99-4cb5-be45-f31d316e2dbe",
           "width": 12,
-          "x": 1100,
+          "x": 1200,
           "y": 517,
           "zOrder": 11,
           "numberProperties": [],
@@ -751,7 +751,7 @@
           "name": "Spawn",
           "persistentUuid": "2bc7fc2d-5bf4-4dd5-8b9b-7402828d604d",
           "width": 11,
-          "x": 1100,
+          "x": 1200,
           "y": 478,
           "zOrder": 12,
           "numberProperties": [],
@@ -781,9 +781,24 @@
           "name": "Pterodactyl",
           "persistentUuid": "609df026-4bc2-4c5c-98ad-136889a12699",
           "width": 0,
-          "x": -201,
-          "y": 281,
+          "x": -183,
+          "y": 363,
           "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 11,
+          "layer": "",
+          "name": "Spawn",
+          "persistentUuid": "db943cca-c2a8-4b0c-900b-620efb01f654",
+          "width": 12,
+          "x": 1200,
+          "y": 385,
+          "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2422,13 +2437,23 @@
                     },
                     {
                       "type": {
+                        "value": "MettreY"
+                      },
+                      "parameters": [
+                        "Block2",
+                        "=",
+                        "Spawn.Y()"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "Create"
                       },
                       "parameters": [
                         "",
                         "Pterodactyl",
                         "Spawn.X()-Pterodactyl.Width()/2",
-                        "Block2.Y()",
+                        "Block2.Y()-Pterodactyl.Height()/2",
                         ""
                       ]
                     }
@@ -2466,12 +2491,22 @@
                   "actions": [
                     {
                       "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "pterodactylSpeed",
+                        "=",
+                        "4+RandomInRange(4,6)"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "AddForceAL"
                       },
                       "parameters": [
                         "Pterodactyl",
                         "180",
-                        "Variable(speed) + (Variable(speed)/4)",
+                        "Variable(speed)",
                         ""
                       ]
                     },
@@ -2482,7 +2517,7 @@
                       "parameters": [
                         "Block2",
                         "180",
-                        "Variable(speed) + (Variable(speed)/4)",
+                        "Variable(speed)",
                         ""
                       ]
                     }
