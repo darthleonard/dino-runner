@@ -581,7 +581,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.2397333435058628,
+        "zoomFactor": 0.6423921022415201,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -730,7 +730,7 @@
           "name": "Spawn",
           "persistentUuid": "2bc7fc2d-5bf4-4dd5-8b9b-7402828d604d",
           "width": 9,
-          "x": 928,
+          "x": 1050,
           "y": 252,
           "zOrder": 12,
           "numberProperties": [],
@@ -861,9 +861,9 @@
           "effects": [],
           "behaviors": [
             {
-              "gravity": 950,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "gravity": 950,
               "acceleration": 1500,
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
@@ -2279,7 +2279,7 @@
                     "Player",
                     "score",
                     ">=",
-                    "200"
+                    "800"
                   ]
                 }
               ],
